@@ -14,8 +14,11 @@ function checkLogin()
             if (luser == login && passw == md5Passw)
             {
                 sessionStorage.setItem('logged', '1');
-                location.href = 'admin/view/admin.html';
+                location.href = 'view/admin.html';
             }
+			else{
+				alert('Senha ou Usuário inválido !');
+			}
     }); 
 
 }
